@@ -4,8 +4,12 @@ body {
   font-family: sans-serif;
 }
 
-h1, h2, h3 {
+h1 {
   color: #969696;
+}
+
+h2, h3 {
+  color: #fff;
 }
 
 .tweet {
@@ -19,6 +23,7 @@ h1, h2, h3 {
 .tweet:hover {
   color: #3fb8ff;
 }
+
 
 .trigger {
   padding: 10px;
