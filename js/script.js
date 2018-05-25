@@ -15,8 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function getQuote() {
+  document.querySelector('.loader').classList.add('show');
+  document.querySelector('.box').classList.add('hide');
   fetch(prefix + quoteUrl, { cache: "no-store" })
     .then(function(resp) {
+      document.querySelector('.loader').classList.remove('show');
+      document.querySelector('.box').classList.remove('hide');
       return resp.json();
     })
     .then(createTweet);

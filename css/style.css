@@ -39,3 +39,17 @@ h2.quote {
   font-style: italic;
   font-weight: lighter;
 }
+
+.loader {
+  display: none;
+}
+
+.loader.show {
+  display: block;
+  color: #fff;
+  margin: 50px;
+}
+
+.box.hide {
+  display: none;
+}
