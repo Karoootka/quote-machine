@@ -19,8 +19,6 @@ function getQuote() {
   document.querySelector('.box').classList.add('hide');
   fetch(prefix + quoteUrl, { cache: "no-store" })
     .then(function(resp) {
-      document.querySelector('.loader').classList.remove('show');
-      document.querySelector('.box').classList.remove('hide');
       return resp.json();
     })
     .then(createTweet);
@@ -52,4 +50,6 @@ function createTweet(input) {
 
   document.querySelector('.tweet').setAttribute('href', tweet);
 
+  document.querySelector('.loader').classList.remove('show');
+  document.querySelector('.box').classList.remove('hide');
 };
