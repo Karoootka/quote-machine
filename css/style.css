@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  background-color: #313332;
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  color: #969696;
+}
+
+.tweet {
+  text-decoration: none;
+  color: #1da1f2;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.tweet:hover {
+  color: #3fb8ff;
+}
+
+.trigger {
+  padding: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+.box {
+  margin: 50px;
+}
+
+h2.quote {
+  font-style: italic;
+  font-weight: lighter;
+}
