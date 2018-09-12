@@ -5,7 +5,6 @@ var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 
 
 document.addEventListener('DOMContentLoaded', function() {
-
   getQuote();
 
   document.querySelector('.trigger').addEventListener('click', function() {
@@ -49,7 +48,6 @@ function createTweet(input) {
   }
 
   document.querySelector('.tweet').setAttribute('href', tweet);
-
-  document.querySelector('.loader').classList.remove('show');
   document.querySelector('.box').classList.remove('hide');
+  document.querySelector('.loader').classList.remove('show');
 };
